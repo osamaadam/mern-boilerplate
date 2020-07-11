@@ -1,0 +1,19 @@
+{
+  "name": "mern-template",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": "true",
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "start:server": "yarn workspace server start",
+    "start:client": "yarn workspace client start",
+    "server:watch": "yarn workspace server watch",
+    "dev": "concurrently \"yarn server:watch\" \"yarn start:client\""
+  },
+  "dependencies": {
+    "concurrently": "^5.2.0"
+  }
+}
