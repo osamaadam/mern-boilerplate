@@ -17,6 +17,7 @@ After installing your frontend of choice, run the following command on the root 
 ```sh
 yarn
 ```
+
 That's it god bless yarn workspaces.
 
 Here are a couple of important Node scripts to run your project.
@@ -43,4 +44,20 @@ Finally, to run both the frontend and the backend concurrently:
 
 ```sh
 yarn dev
+```
+
+If you're a 10x big brain developer you could use the docker environment to develop locally with minimal setup.
+
+<strong>Notice that you'll still need to set up a frontend of your own as mentioned earlier.</strong>
+
+```sh
+docker-compose up
+```
+
+This should also run a MongoDB server in its own container.
+
+To close everything down:
+
+```sh
+docker-compose stop
 ```
