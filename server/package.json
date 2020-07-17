@@ -4,7 +4,6 @@
   "main": "dist/server.js",
   "license": "MIT",
   "scripts": {
-    "prestart": "tsc",
     "start": "node dist/server.js",
     "watch": "concurrently \"tsc -w --pretty\" \"nodemon\""
   },
