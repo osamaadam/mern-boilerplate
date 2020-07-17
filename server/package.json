@@ -1,21 +1,23 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "main": "dist/index.js",
+  "main": "dist/server.js",
   "license": "MIT",
   "scripts": {
     "start": "node dist/server.js",
     "watch": "concurrently \"tsc -w --pretty\" \"nodemon\""
   },
   "dependencies": {
-    "@types/mongoose": "^5.7.31",
-    "@types/node": "^14.0.22",
-    "apollo-server": "^2.15.1",
+    "apollo-server-express": "^2.16.0",
     "dotenv": "^8.2.0",
+    "express": "^4.17.1",
     "graphql": "^15.3.0",
     "mongoose": "^5.9.23"
   },
   "devDependencies": {
+    "@types/mongoose": "^5.7.31",
+    "@types/node": "^14.0.22",
+    "@types/express": "^4.17.7",
     "concurrently": "^5.2.0",
     "nodemon": "^2.0.4",
     "prettier": "^2.0.5",

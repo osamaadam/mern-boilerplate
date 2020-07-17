@@ -1,10 +1,13 @@
-import { ApolloServer } from "apollo-server";
+import express from "express";
+import { ApolloServer } from "apollo-server-express";
 import mongoose from "mongoose";
 
 require("dotenv").config();
 
-const port = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5000;
+const app = express();
 
+/*
 const uri = process.env.MONGO_URI;
 if (uri) {
   mongoose.connect(uri, {
@@ -20,14 +23,13 @@ mongoose.connection.once("open", () =>
 );
 mongoose.connection.on("error", (error) => console.error(error));
 
-/*
-const server = ApolloServer({
+
+const graphQLServer = ApolloServer({
   typeDefs,
   resolvers,
 });
-
-server
-  .listen({ port })
-  .then(({ url }) => console.log(`🚀 Server ready at ${url}`))
-  .catch((error) => console.error(error));
 */
+
+app.listen(PORT, () => {
+  console.log(`Server listening on port ${PORT}..`);
+});
