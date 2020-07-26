@@ -23,7 +23,7 @@ That's it god bless yarn workspaces.
 Here are a couple of important Node scripts to run your project.
 
 ```sh
-yarn start:server
+yarn server:start
 ```
 
 To start the backend on its own without the frontend.
@@ -31,7 +31,7 @@ To start the backend on its own without the frontend.
 similarly, to start the frontend on its own,
 
 ```sh
-yarn start:client
+yarn client:start
 ```
 
 You'll likely usually start the server in watch mode though. So, to start the backend on its own in watch mode:
