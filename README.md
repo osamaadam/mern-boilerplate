@@ -34,6 +34,12 @@ similarly, to start the frontend on its own,
 yarn client:start
 ```
 
+You may need to add the following line to _client/.env_ if the client doesn't start.
+
+```env
+SKIP_PREFLIGHT_CHECK=true
+```
+
 You'll likely usually start the server in watch mode though. So, to start the backend on its own in watch mode:
 
 ```sh
